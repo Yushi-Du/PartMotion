@@ -4,7 +4,7 @@ Yushi Du*, Ruihai Wu*, Yan Shen, Hao Dong
 
 BMVC 2023
 
-[Project](https://ut-austin-rpl.github.io/Ditto/) | [arxiv](https://arxiv.org/abs/2202.08227)
+[Project](https://ut-austin-rpl.github.io/Ditto/)
 
 We released the data generation code of Learning Part Motion of Articulated Objects Using Spatially 
 Continuous Neural Implicit Representations here
