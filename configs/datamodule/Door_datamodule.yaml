@@ -1,0 +1,45 @@
+_target_: src.datamodules.default_datamodule.DefaultDataModule
+
+opt:
+  train:
+    dataset_type: GeoArtDatasetV2
+    data_dir: ${data_dir} # data_dir is specified in config.yaml
+    data_path:
+      - PartNet/Door
+    num_point: 8192
+    num_point_occ: 4096
+    num_point_seg: 2048
+    norm: True
+    norm_padding: 0.1
+    batch_size: 4
+    num_workers: 4 # modified for debug
+    rand_rot: False # random rotation of input data
+    weighted_occ_sample: False
+
+  val:
+    dataset_type: GeoArtDatasetV2
+    data_dir: ${data_dir} # data_dir is specified in config.yaml
+    data_path:
+      - PartNet/Door_test
+    num_point: 8192
+    num_point_occ: 4096
+    num_point_seg: 2048
+    norm: True
+    norm_padding: 0.1
+    batch_size: 4
+    num_workers: 4
+    rand_rot: False # random rotation of input data
+
+  test:
+    dataset_type: GeoArtDatasetV2
+    data_dir: ${data_dir} # data_dir is specified in config.yaml
+    data_path:
+      - PartNet/Door_test
+    num_point: 8192
+    num_point_occ: 4096
+    num_point_seg: 2048
+    norm: True
+    norm_padding: 0.1
+    batch_size: 4
+    num_workers: 4
+    rand_rot: False # random rotation of input data

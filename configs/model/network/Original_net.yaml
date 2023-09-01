@@ -1,0 +1,44 @@
+network_type: ConvONets
+convonet_type: ConvolutionalOccupancyNetworkGeoMapping_3frames
+c_dim: 64
+
+decoder:
+  - simple_local_v2
+decoder_kwargs:
+  - concat_feat: True # trans_mat
+    c_dim: 64
+    task_feat_dim: 768
+    dim: 3
+    hidden_size: 64
+    out_dim: 12
+    sample_mode: bilinear
+    feature_keys:
+      - geo_grid
+encoder: pointnetpp_4dims_3frames
+encoder_kwargs:
+  plane_type:
+    - geo_grid
+#    - corr_xy
+#    - corr_xz
+#    - corr_yz
+  plane_resolution: 64
+  grid_resolution: 40
+  unet: False
+  unet3d: true
+  unet3d_kwargs:
+    num_levels: 4
+    f_maps: 64
+    in_channels: 64
+    out_channels: 64
+
+  unet_corr: true
+  unet_kwargs_corr:
+    depth: 5
+    merge_mode: concat
+    start_filts: 32
+  unet3d_corr: False
+  feat_pos: attn
+  attn_kwargs:
+    type: simple
+  ablation: False
+padding: 0
