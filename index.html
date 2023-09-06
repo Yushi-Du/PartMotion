@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>Learning Part Motion of Articulated Objects Using Spatially Continuous Neural Implicit Representations</title>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
+<link rel="SHORTCUT ICON" href="favicon.ico"/>
+<link href='./css/paperstyle.css' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<div class="pageTitle">
+    Learning Part Motion of Articulated Objects Using Spatially Continuous Neural Implicit Representations
+  <br>
+  <br>
+
+  <br>
+  <span class = "Authors">
+      <a href="https://warshallrho.github.io/" target="_blank">Yushi Du<sup>1*</sup> &nbsp; &nbsp;
+      <a href="https://crtie.github.io/" target="_blank">Ruihai Wu</a><sup>1*</sup> &nbsp; &nbsp;
+      <p style="font-size:12px; "> <i>(*: indicates joint first authors)</i></p>
+       <a href="https://sxy7147.github.io/">Yan Zhao</a> <sup>1</sup> &nbsp; &nbsp;
+      <a href="https://zsdonghao.github.io/" target="_blank">Hao Dong</a><sup>1</sup> &nbsp; &nbsp;<br>
+
+      <sup>1</sup> Peking University </a> &nbsp;
+  </span>
+  </div>
+<br>
+<br>
+<br>
+<div class = "material">
+        <a target="_blank">[Paper]</a> &nbsp; &nbsp;
+        <a target="_blank">[Code]</a> &nbsp; &nbsp;
+        <a target="_blank">[BibTex]</a> &nbsp; &nbsp;
+</div>
+
+<div class = "abstractTitle">
+  Abstract
+</div>
+<p class = "abstractText">
+  Articulated objects (\emph{e.g.}, doors and drawers) exist everywhere in our life.
+Different from rigid objects, articulated objects have higher degrees of freedom and are rich in geometries, semantics, and part functions.
+Modelling different kinds of parts and articulations with neural networks plays an essential role in articulated object understanding and manipulation, and will further benefit 3D vision and robotics communities.
+To model articulated objects, most previous works directly encode articulated objects into a latent space without explicit and interpretable representation. % representations, without specific designs for parts, articulations and part motions.
+To provide interpretable representation for articulated object modelling, in this paper, we introduce a novel framework that explicitly disentangles the part motion of articulated objects by predicting the movements of articulated parts.
+We utilise spatially continuous neural implicit representations to model the part motion smoothly in the space, and we for the first time achieve few-shot generalisation on novel object categories and different joint motions (\emph{e.g.}, rotation and displacement over different axis).
+</p>
+
+<br>
+<div class="abstractTitle">
+    Video Presentation
+</div>
+<br>
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/watch?v=aY5-maonUBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+
+
+<br>
+<br>
+<br>
+
+<div class="abstractTitle">
+  Geometric Shape Assembly
+</div>
+  <img class="bannerImage" src="./images/teaser.png" ,="" width="600"><br>
+  <table width="800" align="center"><tbody><tr><td><p class="figureTitleText">
+        Figure 1.
+        <b>Geometric Shape Assembly</b> aims to assemble different fractured parts into a whole shape.
+        We propose to leverage <b>SE(3) Equivariance</b> for learning Geometric Shape Assembly, which disentangles poses and shapes of fractured parts, and performs better than networks without SE(3)-equivariant representations.  </p></td></tr></tbody></table>
+
+<div class="abstractTitle">
+    Our Proposed Framework
+</div>
+  <img class="bannerImage" src="./images/framework.png" ,="" width="600"><br>
+  <table width="800" align="center"><tbody><tr><td><p class="figureTitleText">
+        Figure 2.
+        <b>Overview of our proposed framework</b>
+Our proposed framework receives two point clouds from the same articulated object under two different part poses.
+      Then generate the object point cloud with a new part pose. It aggregates the geometric information and the pose
+      information into a spatially continuous Transformation Grid. During inferencing, conditioned on the new part pose,
+      it decodes the transformation of each point by querying each point in the Grid to generate the input object with
+      the novel pose.  </p></td></tr></tbody></table>
+
+<div class="abstractTitle">
+    Qualitative Results
+</div>
+  <img class="bannerImage" src="./images/fig3.png" ,="" width="800"><br>
+  <table width="800" align="center"><tbody><tr><td><p class="figureTitleText">
+        Figure 4.
+        <b>Qualitative results</b>
+    </p></td></tr></tbody></table>
+<!--  <img class="bannerImage" src="./images/fig4.png" ,="" width="800"><br>-->
+<!--  <table width="800" align="center"><tbody><tr><td><p class="figureTitleText">-->
+<!--        Figure 4.-->
+<!--        <b>Qualitative results</b> on Breaking Bad dataset for multi-part geometry shape assembly.-->
+<!--  </p></td></tr></tbody></table>-->
+<!--  <img class="bannerImage" src="./images/fig5.png" ,="" width="800"><br>-->
+<!--  <table width="800" align="center"><tbody><tr><td><p class="figureTitleText">-->
+<!--        Figure 5.-->
+<!--        <b>Qualitative results</b> of our method with and without part correlation on Geometric Shape Mating dataset.-->
+<!--         We can see the parts match better when considering part correlations in part representations.-->
+<!--        </p></td></tr></tbody></table>-->
+
+
+<!-- <p></p>  -->
+
+
+
+<br>
+<br>
+
+
+<br>
+<br>
+
+
+<div class = "abstractTitle">
+  Contact
+</div>
+<p class = "abstractText">
+  If you have any questions, please feel free to contact <a href="https://warshallrho.github.io/" target="_blank">Ruihai Wu</a> at wuruihai_at_pku_edu_cn and Yushi Du</a> at yushidu_at_icloud_com.
+</p>
+
+
+
+<br>
+<br>
+
+
+</body></html>
