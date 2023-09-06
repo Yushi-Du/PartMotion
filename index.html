@@ -67,8 +67,10 @@ We utilise spatially continuous neural implicit representations to model the par
   <img class="bannerImage" src="./images/teaser.png" ,="" width="600"><br>
   <table width="800" align="center"><tbody><tr><td><p class="figureTitleText">
         Figure 1.
-        <b>Geometric Shape Assembly</b> aims to assemble different fractured parts into a whole shape.
-        We propose to leverage <b>SE(3) Equivariance</b> for learning Geometric Shape Assembly, which disentangles poses and shapes of fractured parts, and performs better than networks without SE(3)-equivariant representations.  </p></td></tr></tbody></table>
+        There are a plethora of 3D objects around us in the real world.
+Compared to those rigid objects with only 6 degrees of freedom (DoF), articulated objects (\emph{e.g.}, doors and drawers) additionally contain semantically and functionally important articulated parts (\emph{e.g.}, the screen of laptops),
+resulting in their higher DoFs in state space, and more complicated geometries and functions.
+Therefore, understanding and representing articulated objects with diverse geometries and functions is an essential but challenging task for 3D computer vision.  </p></td></tr></tbody></table>
 
 <div class="abstractTitle">
     Our Proposed Framework
@@ -88,7 +90,7 @@ Our proposed framework receives two point clouds from the same articulated objec
 </div>
   <img class="bannerImage" src="./images/fig3.png" ,="" width="800"><br>
   <table width="800" align="center"><tbody><tr><td><p class="figureTitleText">
-        Figure 4.
+        Figure 3.
         <b>Qualitative results</b>
     </p></td></tr></tbody></table>
 <!--  <img class="bannerImage" src="./images/fig4.png" ,="" width="800"><br>-->
