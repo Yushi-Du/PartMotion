@@ -23,6 +23,8 @@
       <a href="https://zsdonghao.github.io/" target="_blank">Hao Dong</a><sup>1</sup> &nbsp; &nbsp;<br>
 
       <sup>1</sup> Peking University </a> &nbsp;
+
+      <a href="https://www.bmvc2023.org/" target="_blank">The 34th British Machine Vision Conference</a>
   </span>
   </div>
 <br>
@@ -42,12 +44,18 @@
   Abstract
 </div>
 <p class = "abstractText">
-  Articulated objects (\emph{e.g.}, doors and drawers) exist everywhere in our life.
-Different from rigid objects, articulated objects have higher degrees of freedom and are rich in geometries, semantics, and part functions.
-Modelling different kinds of parts and articulations with neural networks plays an essential role in articulated object understanding and manipulation, and will further benefit 3D vision and robotics communities.
-To model articulated objects, most previous works directly encode articulated objects into a latent space without explicit and interpretable representation. % representations, without specific designs for parts, articulations and part motions.
-To provide interpretable representation for articulated object modelling, in this paper, we introduce a novel framework that explicitly disentangles the part motion of articulated objects by predicting the movements of articulated parts.
-We utilise spatially continuous neural implicit representations to model the part motion smoothly in the space, and we for the first time achieve few-shot generalisation on novel object categories and different joint motions (\emph{e.g.}, rotation and displacement over different axis).
+  Articulated objects (e.g., doors and drawers) exist everywhere in our life. Different from rigid objects, articulated
+    objects have higher degrees of freedom, and are rich in geometries, semantics and part functions. Modeling different
+    kinds of parts and articulations plays an essential role in articulated object understanding and manipulation, and
+    will further benefit 3D vision and robotics communities. To model articulated objects, most previous works directly
+    encode articulated objects into feature representations, without specific designs for parts, articulations and part
+    motions. In this paper, we introduce a novel framework that disentangles the part motion of articulated objects by
+    predicting the transformation matrix of points on the part surface, using spatially continuous neural implicit
+    representations to model the part motion smoothly in the space. Besides, while many methods could only model a
+    certain kind of joint motion (such as the revolution in the clockwise order), our proposed framework is generic to
+    different kinds of joint motions in that transformation matrix can model diverse kinds motions in the space.
+    Quantitative and qualitative results of experiments over diverse categories of articulated objects demonstrate the
+    effectiveness of our proposed framework.
 </p>
 
 <br>
