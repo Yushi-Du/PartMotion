@@ -52,3 +52,12 @@ python run_tune.py experiment=Door_emd trainer.resume_from_checkpoint=/path/to/t
 
 You'll also need to follow the instructions [here](https://github.com/daerduoCarey/PyTorchEMD) to set up the Earth Mover 
 Distance mentioned in our paper.
+
+## bibtex
+@InProceedings{du2023learning,
+    author    = {Du, Yushi and Wu, Ruihai and Shen, Yan and Dong, Hao},
+    title     = {Learning Part Motion of Articulated Objects Using Spatially Continuous Neural Implicit Representations},
+    booktitle = {British  Machine  Vision Conference (BMVC)},
+    month     = {November},
+    year      = {2023}
+}
